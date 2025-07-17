@@ -1,0 +1,23 @@
+<template>
+	<lightning-card title="Progreso de tareas">
+		<div class="slds-p-horizontal_medium slds-p-vertical_small">
+			<p>{completed} de {total} tareas completadas</p>
+			<lightning-progress-bar value={percent} size="medium"></lightning-progress-bar>
+			<p>{percent}% completado</p>
+
+			<hr class="slds-m-vertical_small"/>
+
+			<p><strong>Clima actual:</strong> {clima}</p>
+			<p><strong>Seguimiento mas reciente:</strong> {seguimientoReciente}</p>
+
+			<hr class="slds-m-vertical_small"/>
+
+			<p><strong>Seguimientos por etapa:</strong></p>
+			<ul class="slds-list_dotted">
+				<li><strong>Pendientes:</strong> {pendientes}</li>
+				<li><strong>En proceso:</strong> {enProceso}</li>
+				<li><strong>Completados:</strong> {completados}</li>
+			</ul>
+		</div>
+	</lightning-card>
+</template>
